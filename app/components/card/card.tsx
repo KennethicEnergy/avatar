@@ -9,18 +9,15 @@ type TProps = {
   projectTechStack: Array<string> | null;
 }
 const Card = ({projectGif, projectTechStack}: TProps) => {
-  console.log(rowIcons, projectTechStack);
   return (
     <div className={styles.card}>
       <Image src={projectGif} alt="project image" fill quality={100} priority />
-
       <div className={styles.madeWith}>
         <span>Made with:</span>
         <div className={styles.technologies}>
           {projectTechStack?.map((tech, index) => <span key={index}>{rowIcons.find(icon => icon.key === tech)} {tech}</span>)}
         </div>
       </div>
-
       <div className={styles.enterFullScreen}>
         <RxEnterFullScreen size={30}/>
       </div>
