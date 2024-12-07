@@ -1,11 +1,20 @@
 .alert {
-  height: 100px;
+  height: fit-content;
   width: 300px;
-  background: #FF6961;
   border-radius: 4px;
   position: absolute;
-  top: 0;
-  right: 0;
-  margin: 20px 20px 0 0;
+  top: 24px;
+  right: 24px;
   padding: 20px;
+  gap: 0.2rem;
+  display: flex;
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+
+    svg {
+      cursor: pointer;
+    }
+  }
 }
