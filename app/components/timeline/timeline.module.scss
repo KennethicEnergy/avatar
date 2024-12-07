@@ -1,0 +1,22 @@
+.timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px; /* Space for the vertical line */
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 20px; /* Center of the markers */
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #ddd; /* Vertical line color */
+  }
+
+  .expandButton {
+    background: none;
+    border: none;
+    width: fit-content;
+  }
+}

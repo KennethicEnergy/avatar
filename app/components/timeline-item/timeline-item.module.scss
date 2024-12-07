@@ -1,0 +1,83 @@
+.timelineItem {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.marker {
+  position: absolute;
+  left: -27px;
+  width: 16px;
+  height: 16px;
+  background-color: #4a4a4a;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+
+  &:last-child {
+    background-color: #007bff;
+  }
+}
+
+.content {
+  padding: 0 15px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  span {
+    &:hover {
+      cursor: pointer;
+      color: #fff;
+    }
+  }
+}
+
+.company {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #555;
+  width: fit-content;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.date {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 1rem;
+  color: #535353
+}
+
+.link {
+  display: inline-block;
+  color: #007bff;
+  margin-top: 5px;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

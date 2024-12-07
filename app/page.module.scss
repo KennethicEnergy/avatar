@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 4rem;
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    min-width: 400px;
+    gap: 2rem;
+
+    .profile {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #4a4a4a;
+      border-radius: 5px;
+      width: auto;
+      padding: 2rem;
+
+      .name {
+        font-weight: bold;
+      }
+    }
+
+    .nameRow {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      span {
+        cursor: pointer;
+      }
+    }
+
+    .location {
+      color: #777;
+    }
+
+    .intro {
+      margin-top: 1.5rem;
+    }
+  }
+
+
+  .techTitle {
+
+  }
+
+}
