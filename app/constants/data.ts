@@ -63,7 +63,7 @@ export const timelineData: TimelineData[] = [
 		company: "Collabera Digital",
 		companyUrl: "https://www.collaberadigital.com",
 		date: "July 2022 - July 2023",
-		description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+		description: "My day-to-day work involves converting all UI content into a CMS to enhance website optimization and creating fluid UI and UX based on designs provided in Figma. I document my assigned tasks along with the corresponding test attachments, review and approve tickets submitted by other frontend developers, and participate in scrum meetings and planning sessions. Collaboration is a key part of my role, as I work closely with teams from various departments to ensure projects are executed effectively.",
     projectUrl: "projects/collabera",
     projectImages: [
       "/images/projects/cebupacific-1.png",
@@ -90,7 +90,7 @@ export const timelineData: TimelineData[] = [
 		companyUrl: "https://wbridgesmanpower.com",
 
 		date: "September 2023 - September 2024",
-		description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+		description: "I work on maintaining large-scale projects with multiple variants, ensuring seamless multi-theme functionality within a single application. I quickly translate Figma designs into fully functional websites and apps, document my assigned tasks along with the necessary test attachments, and review and approve tickets submitted by other frontend developers. My routine also involves participating in scrum meetings and planning sessions, collaborating with teams across Southeast Asia to align on project goals and deliverables.",
     projectUrl: "projects/w-bridges",
     projectImages: [
       "/images/projects/game99-1.png",
@@ -120,9 +120,7 @@ export const timelineData: TimelineData[] = [
 		company: "BossDeal Corporation",
     companyUrl: null,
 		date: "September 2024 - Present",
-		description:
-			`Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`,
+		description: "In my current role, I am responsible for developing betting game applications using Next.js and Vue.js. My tasks include designing and implementing key features, ensuring seamless integration of backend APIs, and optimizing performance for a smooth user experience. I work closely with designers to translate mockups into interactive interfaces, follow best practices for maintainable and scalable code, and implement unit tests to ensure code reliability. Additionally, I collaborate with stakeholders to gather requirements, troubleshoot issues, and deploy updates, ensuring the applications meet user expectations and project deadlines.",
     projectUrl: null,
     projectImages: null,
     projectGif: null,
