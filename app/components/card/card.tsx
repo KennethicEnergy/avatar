@@ -12,13 +12,13 @@ type TProps = {
 const Card = ({projectGif}: TProps) => {
   return (
     <div className={styles.card}>
-      <Image src={projectGif} alt="project image" width={580} height={300} quality={100} priority/>
+      <Image src={projectGif} alt="project image" fill quality={100} priority />
 
       <div className={styles.madeWith}>
         <span>Made with:</span>
         <div className={styles.technologies}>
           <span><RiNextjsFill size={30}/> Next.js</span>
-          <span><BiLogoReact size={30}/> React</span>
+          <span><BiLogoReact size={30}/> React.js</span>
           <span><BiLogoSass size={30}/> SASS</span>
           <span><BiLogoTypescript size={30}/> TypeScript</span>
         </div>

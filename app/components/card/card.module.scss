@@ -4,13 +4,20 @@
   flex-direction: column;
   border: 1px solid #4a4a4a;
   border-radius: 8px;
-  padding: 8px;
   overflow: hidden;
   z-index: 1;
   cursor: pointer;
 
+  width: 100%; // Fully responsive
+  max-width: 580px; // Limit maximum width
+  aspect-ratio: 16 / 9; // Maintain consistent height based on width
+
   img {
-    filter: brightness(0.5);
+    width: 100%;
+    height: 100%; // Fill the card while maintaining aspect ratio
+    object-fit: contain; // Ensures the image scales properly
+    filter: brightness(0.65);
+    transition: filter 0.3s ease;
   }
 
   .madeWith {
@@ -20,10 +27,16 @@
     bottom: 13px;
     margin: 0 8px;
 
+    span {
+      font-size: 1rem; // Default font size
+    }
+
     .technologies {
       display: flex;
       align-items: center;
-      height: 30px;
+      flex-wrap: wrap; // Allows wrapping when there isn't enough space
+      gap: 0.5rem;
+      height: auto; // Adjust height dynamically
 
       span {
         display: flex;
@@ -31,13 +44,15 @@
         align-items: center;
         gap: 0.5rem;
         text-transform: capitalize;
-        margin-right: 0.5rem;
         padding: 0.2rem;
+        font-size: 1rem; // Default size for text
+      }
+
+      svg { // Target the icons
+        font-size: 1.8rem; // Default size for icons
       }
     }
   }
-
-
 
   .enterFullScreen {
     display: flex;
@@ -50,7 +65,6 @@
     transform: translate(-50%, -50%);
   }
 
-
   &:hover {
     img {
       filter: brightness(0.2) blur(10px);
@@ -62,3 +76,28 @@
   }
 }
 
+/* Adjust for smaller screens if needed */
+@media (max-width: 768px) {
+  .card {
+    max-width: 100%; // Let it take full screen width
+  }
+
+  .madeWith {
+    span {
+      font-size: 0.9rem; // Slightly smaller font size for "Made with:"
+    }
+
+    .technologies {
+      justify-content: space-around;
+      gap: 0.3rem; // Reduce spacing between items
+
+      span {
+        font-size: 0.8rem; // Smaller text size
+      }
+
+      svg { // Adjust icon size
+        font-size: 1.5rem; // Smaller icons
+      }
+    }
+  }
+}
