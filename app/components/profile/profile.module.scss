@@ -16,8 +16,11 @@
   justify-content: space-between;
   align-items: center;
 
-  span {
-    cursor: pointer;
+  .socials {
+    display: flex;
+    span {
+      cursor: pointer;
+    }
   }
 }
 

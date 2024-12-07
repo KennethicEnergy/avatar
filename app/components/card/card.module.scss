@@ -7,15 +7,14 @@
   overflow: hidden;
   z-index: 1;
   cursor: pointer;
-
-  width: 100%; // Fully responsive
-  max-width: 580px; // Limit maximum width
-  aspect-ratio: 16 / 9; // Maintain consistent height based on width
+  width: 100%;
+  max-width: 580px;
+  aspect-ratio: 16 / 9;
 
   img {
     width: 100%;
-    height: 100%; // Fill the card while maintaining aspect ratio
-    object-fit: contain; // Ensures the image scales properly
+    height: 100%;
+    object-fit: contain;
     filter: brightness(0.65);
     transition: filter 0.3s ease;
   }
@@ -28,15 +27,15 @@
     margin: 0 8px;
 
     span {
-      font-size: 1rem; // Default font size
+      font-size: 1rem;
     }
 
     .technologies {
       display: flex;
       align-items: center;
-      flex-wrap: wrap; // Allows wrapping when there isn't enough space
+      flex-wrap: wrap;
       gap: 0.5rem;
-      height: auto; // Adjust height dynamically
+      height: auto;
 
       span {
         display: flex;
@@ -45,11 +44,11 @@
         gap: 0.5rem;
         text-transform: capitalize;
         padding: 0.2rem;
-        font-size: 1rem; // Default size for text
+        font-size: 1rem;
       }
 
-      svg { // Target the icons
-        font-size: 1.8rem; // Default size for icons
+      svg {
+        font-size: 1.8rem;
       }
     }
   }
@@ -76,27 +75,26 @@
   }
 }
 
-/* Adjust for smaller screens if needed */
 @media (max-width: 768px) {
   .card {
-    max-width: 100%; // Let it take full screen width
+    max-width: 100%;
   }
 
   .madeWith {
     span {
-      font-size: 0.9rem; // Slightly smaller font size for "Made with:"
+      font-size: 0.9rem;
     }
 
     .technologies {
       justify-content: space-around;
-      gap: 0.3rem; // Reduce spacing between items
+      gap: 0.3rem;
 
       span {
-        font-size: 0.8rem; // Smaller text size
+        font-size: 0.8rem;
       }
 
-      svg { // Adjust icon size
-        font-size: 1.5rem; // Smaller icons
+      svg {
+        font-size: 1.5rem;
       }
     }
   }

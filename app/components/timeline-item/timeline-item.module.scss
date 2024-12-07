@@ -35,6 +35,10 @@
   padding: 0 15px;
   border-radius: 8px;
   width: 100%;
+
+  button {
+    color: #fff;
+  }
 }
 
 .title {
@@ -45,7 +49,11 @@
   justify-content: space-between;
   align-items: center;
 
-  span {
+  .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     &:hover {
       cursor: pointer;
       color: #fff;

@@ -9,7 +9,7 @@ const Profile = () => {
     <div className={styles.profile}>
       <div className={styles.nameRow}>
         <h1 className={styles.name}>{fullName}</h1>
-        <div>
+        <div className={styles.socials}>
           <span onClick={() => window.open(linkedinUrl, "_blank")}><IoLogoLinkedin size={30}/></span>
           <span onClick={() => window.open(githubUrl, "_blank")}><BiLogoGithub size={30}/></span>
         </div>

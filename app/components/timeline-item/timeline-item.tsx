@@ -37,7 +37,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
       <div className={styles.content} >
         <h3 className={styles.title}>
           {title}
-          {projectUrl && <span onClick={() => router.push(projectUrl)}><CiImageOn size={20}/></span>}
+          {projectUrl && <div className={styles.icon} onClick={() => router.push(projectUrl)}><CiImageOn size={20}/></div>}
         </h3>
         <h4 className={styles.company} onClick={() => companyUrl && window.open(companyUrl, "_blank")}>{company}</h4>
         <p className={styles.date}>{date}</p>
