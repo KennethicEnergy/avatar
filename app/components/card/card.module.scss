@@ -1,0 +1,64 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #4a4a4a;
+  border-radius: 8px;
+  padding: 8px;
+  overflow: hidden;
+  z-index: 1;
+  cursor: pointer;
+
+  img {
+    filter: brightness(0.5);
+  }
+
+  .madeWith {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 13px;
+    margin: 0 8px;
+
+    .technologies {
+      display: flex;
+      align-items: center;
+      height: 30px;
+
+      span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        text-transform: capitalize;
+        margin-right: 0.5rem;
+        padding: 0.2rem;
+      }
+    }
+  }
+
+
+
+  .enterFullScreen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    visibility: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+  &:hover {
+    img {
+      filter: brightness(0.2) blur(10px);
+    }
+
+    .enterFullScreen {
+      visibility: visible;
+    }
+  }
+}
+

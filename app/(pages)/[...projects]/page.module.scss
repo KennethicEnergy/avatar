@@ -1,0 +1,17 @@
+.project {
+  height: calc(100vh - 8rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+
+  h1 {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  p {
+    color: #777;
+  }
+}

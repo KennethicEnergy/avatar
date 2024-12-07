@@ -82,6 +82,20 @@
   line-height: 1.5;
 }
 
+.descriptionList {
+  color: #535353;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-left: 1rem;
+  line-height: 1.5;
+
+  li::marker {
+    font-size: 1.2em;
+    color: #fff;
+  }
+}
+
 .link {
   display: inline-block;
   color: #007bff;

@@ -4,5 +4,5 @@ export type TimelineItemProps = {
   date: string;
   projectUrl?: string;
   companyUrl?: string;
-  description?: string;
+  description?: string | Array<string>;
 }
