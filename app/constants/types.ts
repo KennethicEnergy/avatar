@@ -2,9 +2,9 @@ export type TimelineItemProps = {
   title: string;
   company: string;
   date: string;
-  projectUrl?: string;
-  companyUrl?: string;
-  description?: string | Array<string>;
+  projectUrl: string | null;
+  companyUrl: string | null;
+  description: string | Array<string>;
 }
 
 export type TimelineData = {
