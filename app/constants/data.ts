@@ -13,7 +13,7 @@ export const timelineData = [
 		title: "Front-End Web Developer",
 		company: "98Labs Inc.",
 		companyUrl: "https://98labs.com",
-		projectGalleryUrl: "https://98labs.com",
+    projectUrl: "/98labs",
 		date: "December 2018 - May 2021",
 		description:
 			"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
@@ -32,7 +32,7 @@ export const timelineData = [
 		title: "Senior Front-End Web Developer",
 		company: "Collabera Digital",
 		companyUrl: "https://www.collaberadigital.com",
-    projectGalleryUrl: "https://www.collaberadigital.com",
+    projectUrl: "/collabera",
 		date: "July 2022 - July 2023",
 		description:
 			"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
@@ -42,9 +42,10 @@ export const timelineData = [
 		title: "Senior Front-End Web Developer",
 		company: "W-Bridges Manpower Corporation",
 		companyUrl: "https://wbridgesmanpower.com",
+    projectUrl: "/w-bridges",
 		date: "September 2023 - September 2024",
 		description:
-			"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+			"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
 	},
 	{
 		id: 6,

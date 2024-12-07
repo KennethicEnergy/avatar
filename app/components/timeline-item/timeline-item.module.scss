@@ -7,6 +7,12 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  button {
+    background: none;
+    border: none;
+    width: fit-content;
+  }
 }
 
 .marker {
@@ -68,7 +74,12 @@
 
 .description {
   font-size: 1rem;
-  color: #535353
+  color: #535353;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.5;
 }
 
 .link {

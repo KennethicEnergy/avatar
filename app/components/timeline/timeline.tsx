@@ -21,7 +21,7 @@ const Timeline: React.FC = () => {
           key={item.id}
           title={item.title}
           date={item.date}
-          projectGalleryUrl={item.projectGalleryUrl}
+          projectUrl={item.projectUrl}
           companyUrl={item.companyUrl}
           company={item.company}
           description={item.description}

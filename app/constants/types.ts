@@ -2,7 +2,7 @@ export type TimelineItemProps = {
   title: string;
   company: string;
   date: string;
-  projectGalleryUrl?: string;
+  projectUrl?: string;
   companyUrl?: string;
   description?: string;
 }

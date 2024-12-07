@@ -1,1 +1,4 @@
-![Alt text](public\images\chrome_j3bE3jaQa4.gif)
+
+[Check it out](http://knvzta.com)
+
+![Demo GIF](images/demo.gif)

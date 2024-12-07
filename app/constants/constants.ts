@@ -1,3 +1,5 @@
 export const githubUrl = "https://github.com/KennethicEnergy"
-
+export const country = "Philippines"
 export const linkedinUrl = "https://www.linkedin.com/in/ken-buenavista-94a736144/"
+export const fullName = "Kenneth Buenavista"
+export const introduction = "I code to make websites"
