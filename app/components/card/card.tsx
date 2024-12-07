@@ -5,10 +5,14 @@ import { RiNextjsFill } from "react-icons/ri";
 import { BiLogoReact, BiLogoSass, BiLogoTypescript } from 'react-icons/bi';
 import { RxEnterFullScreen } from "react-icons/rx";
 
-const Card = () => {
+
+type TProps = {
+  projectGif: string;
+}
+const Card = ({projectGif}: TProps) => {
   return (
     <div className={styles.card}>
-      <Image src="/images/project-gifs/game99.gif" alt="project image" width={580} height={300} quality={100} />
+      <Image src={projectGif} alt="project image" width={580} height={300} quality={100} priority/>
 
       <div className={styles.madeWith}>
         <span>Made with:</span>

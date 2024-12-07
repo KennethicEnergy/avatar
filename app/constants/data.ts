@@ -27,11 +27,16 @@ export const timelineData = [
     ],
     projectUrl: "projects/tcs",
     projectImages: [
-      "/public/images/projects/manulife-id-1.png",
-      "/public/images/projects/manulife-id-2.png",
-      "/public/images/projects/manulife-id-3.png",
-      "/public/images/projects/manulife-id-4.png",
-    ]
+      "/images/projects/manulife-id-1.png",
+      "/images/projects/manulife-id-2.png",
+      "/images/projects/manulife-id-3.png",
+      "/images/projects/manulife-id-4.png",
+    ],
+    projectGif: "/images/project-gifs/game99.gif",
+    projectName: "Manulife Indonesia",
+    projectDescription: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus blanditiis ipsum mollitia reprehenderit sint neque architecto ut ratione nulla tenetur quas,
+        cumque est vel impedit provident repellendus reiciendis praesentium culpa aperiam nemo! Ullam magni voluptate commodi aspernatur temporibus iure,
+        culpa dolore sint quas eaque debitis itaque facilis voluptas fugiat perspiciatis!`
 	},
 	{
 		id: 4,
@@ -42,11 +47,16 @@ export const timelineData = [
 		description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     projectUrl: "projects/collabera",
     projectImages: [
-      "/public/images/projects/cebupacific-1.png",
-      "/public/images/projects/cebupacific-2.png",
-      "/public/images/projects/cebupacific-3.png",
-      "/public/images/projects/cebupacific-4.png",
-    ]
+      "/images/projects/cebupacific-1.png",
+      "/images/projects/cebupacific-2.png",
+      "/images/projects/cebupacific-3.png",
+      "/images/projects/cebupacific-4.png",
+    ],
+    projectGif: "/images/project-gifs/game99.gif",
+    projectName: "Cebu Pacific Air",
+    projectDescription: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus blanditiis ipsum mollitia reprehenderit sint neque architecto ut ratione nulla tenetur quas,
+        cumque est vel impedit provident repellendus reiciendis praesentium culpa aperiam nemo! Ullam magni voluptate commodi aspernatur temporibus iure,
+        culpa dolore sint quas eaque debitis itaque facilis voluptas fugiat perspiciatis!`
 	},
 	{
 		id: 5,
@@ -58,14 +68,19 @@ export const timelineData = [
 		description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
     projectUrl: "projects/w-bridges",
     projectImages: [
-      "/public/images/projects/game99-1.png",
-      "/public/images/projects/game99-2.png",
-      "/public/images/projects/game99-3.png",
-      "/public/images/projects/game99-4.png",
-      "/public/images/projects/game99-5.png",
-      "/public/images/projects/game99-6.png",
-      "/public/images/projects/game99-7.png",
-    ]
+      "/images/projects/game99-1.png",
+      "/images/projects/game99-2.png",
+      "/images/projects/game99-3.png",
+      "/images/projects/game99-4.png",
+      "/images/projects/game99-5.png",
+      "/images/projects/game99-6.png",
+      "/images/projects/game99-7.png",
+    ],
+    projectGif: "/images/project-gifs/game99.gif",
+    projectName: "Game99",
+    projectDescription: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus blanditiis ipsum mollitia reprehenderit sint neque architecto ut ratione nulla tenetur quas,
+        cumque est vel impedit provident repellendus reiciendis praesentium culpa aperiam nemo! Ullam magni voluptate commodi aspernatur temporibus iure,
+        culpa dolore sint quas eaque debitis itaque facilis voluptas fugiat perspiciatis!`
 	},
 	{
 		id: 6,

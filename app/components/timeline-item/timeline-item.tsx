@@ -28,7 +28,6 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
       const maxHeight = lineHeight * 4;
       const actualHeight = element.scrollHeight;
       setIsClamped(actualHeight > maxHeight);
-      console.log(element, lineHeight, maxHeight, actualHeight);
     }
   }, []);
 
