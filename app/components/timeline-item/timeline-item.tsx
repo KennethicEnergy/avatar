@@ -42,7 +42,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
         <h4 className={styles.company} onClick={() => companyUrl && window.open(companyUrl, "_blank")}>{company}</h4>
         <p className={styles.date}>{date}</p>
         {typeof(description) === "string" ?
-          <p ref={descriptionRef} className={styles.description} style={{WebkitLineClamp: isExpanded ? "none" : 4}} >{description}</p> :
+          <p ref={descriptionRef} className={styles.description} style={{WebkitLineClamp: isExpanded ? "none" : 3}} >{description}</p> :
           <ul className={styles.descriptionList}>
             {description && description.map((item, index) => (
               <li key={index}>{item}</li>
