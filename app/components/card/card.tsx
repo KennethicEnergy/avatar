@@ -1,15 +1,15 @@
 import React from 'react'
 import styles from './card.module.scss';
 import Image from 'next/image';
-import { RiNextjsFill } from "react-icons/ri";
-import { BiLogoReact, BiLogoSass, BiLogoTypescript } from 'react-icons/bi';
 import { RxEnterFullScreen } from "react-icons/rx";
-
+import { rowIcons } from "@/app/constants/tech-icons";
 
 type TProps = {
   projectGif: string;
+  projectTechStack: Array<string> | null;
 }
-const Card = ({projectGif}: TProps) => {
+const Card = ({projectGif, projectTechStack}: TProps) => {
+  console.log(rowIcons, projectTechStack);
   return (
     <div className={styles.card}>
       <Image src={projectGif} alt="project image" fill quality={100} priority />
@@ -17,10 +17,7 @@ const Card = ({projectGif}: TProps) => {
       <div className={styles.madeWith}>
         <span>Made with:</span>
         <div className={styles.technologies}>
-          <span><RiNextjsFill size={30}/> Next.js</span>
-          <span><BiLogoReact size={30}/> React.js</span>
-          <span><BiLogoSass size={30}/> SASS</span>
-          <span><BiLogoTypescript size={30}/> TypeScript</span>
+          {projectTechStack?.map((tech, index) => <span key={index}>{rowIcons.find(icon => icon.key === tech)} {tech}</span>)}
         </div>
       </div>
 

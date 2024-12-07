@@ -1,4 +1,6 @@
-export const timelineData = [
+import { TimelineData } from "./types";
+
+export const timelineData: TimelineData[] = [
 	{
 		id: 1,
 		title: "Internship",
@@ -6,6 +8,12 @@ export const timelineData = [
 		companyUrl: "https://98labs.com",
 		date: "November 2016 - April 2017",
 		description: "I was assigned to do QA tasks. This is where my journey began and where I learned HTML and CSS and JavaScript!.",
+    projectUrl: null,
+    projectImages: null,
+    projectGif: null,
+    projectName: null,
+    projectDescription: null,
+    projectTechStack: null
 	},
 	{
 		id: 2,
@@ -14,6 +22,12 @@ export const timelineData = [
 		companyUrl: "https://98labs.com",
 		date: "December 2018 - May 2021",
 		description: "This is where I started to learn how to build a websites with React and Angular.",
+    projectUrl: null,
+    projectImages: null,
+    projectGif: null,
+    projectName: null,
+    projectDescription: null,
+    projectTechStack: null
 	},
 	{
 		id: 3,
@@ -36,7 +50,12 @@ export const timelineData = [
     projectName: "Manulife ID",
     projectDescription: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus blanditiis ipsum mollitia reprehenderit sint neque architecto ut ratione nulla tenetur quas,
         cumque est vel impedit provident repellendus reiciendis praesentium culpa aperiam nemo! Ullam magni voluptate commodi aspernatur temporibus iure,
-        culpa dolore sint quas eaque debitis itaque facilis voluptas fugiat perspiciatis!`
+        culpa dolore sint quas eaque debitis itaque facilis voluptas fugiat perspiciatis!`,
+    projectTechStack: [
+      'Angular',
+      'TypeScript',
+      'SASS'
+    ]
 	},
 	{
 		id: 4,
@@ -56,7 +75,13 @@ export const timelineData = [
     projectName: "Cebu Pacific Air",
     projectDescription: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus blanditiis ipsum mollitia reprehenderit sint neque architecto ut ratione nulla tenetur quas,
         cumque est vel impedit provident repellendus reiciendis praesentium culpa aperiam nemo! Ullam magni voluptate commodi aspernatur temporibus iure,
-        culpa dolore sint quas eaque debitis itaque facilis voluptas fugiat perspiciatis!`
+        culpa dolore sint quas eaque debitis itaque facilis voluptas fugiat perspiciatis!`,
+    projectTechStack: [
+      'Angular',
+      'TypeScript',
+      'SASS',
+      'Figma'
+    ]
 	},
 	{
 		id: 5,
@@ -80,14 +105,29 @@ export const timelineData = [
     projectName: "Game99",
     projectDescription: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus blanditiis ipsum mollitia reprehenderit sint neque architecto ut ratione nulla tenetur quas,
         cumque est vel impedit provident repellendus reiciendis praesentium culpa aperiam nemo! Ullam magni voluptate commodi aspernatur temporibus iure,
-        culpa dolore sint quas eaque debitis itaque facilis voluptas fugiat perspiciatis!`
+        culpa dolore sint quas eaque debitis itaque facilis voluptas fugiat perspiciatis!`,
+    projectTechStack: [
+      'NextJs',
+      'React',
+      'TypeScript',
+      'SASS',
+      'Tailwind'
+    ]
 	},
 	{
 		id: 6,
 		title: "Senior Front-End Web Developer",
 		company: "BossDeal Corporation",
+    companyUrl: null,
 		date: "September 2024 - Present",
 		description:
-			"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+			`Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`,
+    projectUrl: null,
+    projectImages: null,
+    projectGif: null,
+    projectName: null,
+    projectDescription: null,
+    projectTechStack: null
 	},
 ];

@@ -15,7 +15,9 @@ const Page = () => {
   return (
     <div className={styles.project}>
       <h1><IoIosArrowRoundBack onClick={() => router.push("/")}/>{projectData?.projectName}</h1>
-      <Card projectGif={projectData?.projectGif ?? '/images/fallback-img.jpg'} />
+      <Card
+        projectGif={projectData?.projectGif ?? '/images/fallback-img.jpg'}
+        projectTechStack={projectData?.projectTechStack ?? []}/>
       <p>{projectData?.projectDescription ?? 'No project description found.'}</p>
     </div>
   )
