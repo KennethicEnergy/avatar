@@ -21,3 +21,15 @@ export type TimelineData = {
   projectDescription: string | null;
   projectTechStack: Array<string> | null;
 }
+
+export interface ApplicationStore {
+  lang: string;
+  currentModal: number | null;
+  isModalOpen: boolean;
+  isPageLoading: boolean;
+  setLang: (lang: string) => void;
+  setModal: (view: number| null) => void;
+  setIsModalOpen: (open: boolean) => void;
+  setIsPageLoading: (loading: boolean) => void;
+  resetAppStore: () =>  void;
+}
