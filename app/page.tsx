@@ -4,11 +4,9 @@ import WhatIWorkWith from "./components/what-i-work-with";
 import Profile from "./components/profile/profile";
 import { useAppStore } from "./store/app-store";
 import { useEffect } from "react";
-import Alert from "./components/alert/alert";
-import Loader from "./components/loader/loader";
 
 export default function Home() {
-  const { setIsPageLoading, isAlertOpen, isPageLoading } = useAppStore();
+  const { setIsPageLoading } = useAppStore();
 
   useEffect(() => {
     setIsPageLoading(false);
@@ -16,13 +14,9 @@ export default function Home() {
 
 	return (
     <>
-      <>
-        <Profile />
-        <WhatIWorkWith />
-        <Experience />
-      </>
-      {isAlertOpen && <Alert />}
-      {isPageLoading && <Loader />}
+      <Profile />
+      <WhatIWorkWith />
+      <Experience />
     </>
 	);
 }

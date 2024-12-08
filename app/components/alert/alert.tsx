@@ -1,31 +1,32 @@
+"use client"
 import React from 'react'
 import styles from './alert.module.scss';
 import { IoIosClose } from "react-icons/io";
+import { useAppStore } from '@/app/store/app-store';
 
-type AlertType = {
-  type?: 'error' | 'success' | 'info' | 'warning' | 'default';
-  isDismissable?: boolean;
-}
-
-const Alert = ({type = 'default', isDismissable = true}: AlertType) => {
+const Alert = () => {
+  const { alertType = 'default', alertMessage, isAlertDismissable, isAlertOpen, resetAlert } = useAppStore();
   let background = '';
-  if (type === 'success') {
+
+  if (alertType === 'success') {
     background = '#63bb65';
-  } else if (type === 'error') {
+  } else if (alertType === 'error') {
     background = '#FF6961';
-  } else if (type === 'info') {
+  } else if (alertType === 'info') {
     background = '#4d4dff';
-  } else if (type === 'warning') {
+  } else if (alertType === 'warning') {
     background = '#aeae00';
-  } else if (type === 'default') {
+  } else if (alertType === 'default') {
     background = '#4a4a4a';
   }
 
   return (
-    <div className={styles.alert} style={{backgroundColor: `${background}`}}>
-      <p>This feature is currently on development</p>
-      {isDismissable && <p><IoIosClose /></p>}
-    </div>
+    <>
+      {isAlertOpen && <div className={styles.alert} style={{backgroundColor: `${background}`}}>
+        <p>{alertMessage}</p>
+        {isAlertOpen && isAlertDismissable && <p onClick={() => resetAlert()}><IoIosClose /></p>}
+      </div>}
+    </>
   )
 }
 

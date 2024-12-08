@@ -24,14 +24,20 @@ export type TimelineData = {
 
 export interface ApplicationStore {
   lang: string;
+  alertMessage: string | null;
+
   currentModal: number | null;
   isModalOpen: boolean;
   isPageLoading: boolean;
   isAlertOpen: boolean;
+  alertType?: string | null;
+  isAlertDismissable?: boolean;
   setLang: (lang: string) => void;
+  setAlert: (type: string | null, message: string | null, isDismissable?: boolean) => void;
   setModal: (view: number| null) => void;
   setIsModalOpen: (open: boolean) => void;
   setIsPageLoading: (loading: boolean) => void;
   setIsAlertOpen: (open: boolean) => void;
   resetAppStore: () =>  void;
+  resetAlert: () => void;
 }

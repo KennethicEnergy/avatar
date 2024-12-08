@@ -4,10 +4,12 @@ import styles from './page.module.scss';
 import { useAppStore } from '@/app/store/app-store';
 
 const Page = () => {
-  const { setIsPageLoading } = useAppStore();
+  const { setIsPageLoading, setAlert, setIsAlertOpen } = useAppStore();
 
   useEffect(() => {
     setIsPageLoading(false);
+    setAlert("warning", "This feature is currently on development.");
+    setIsAlertOpen(true);
   }, []);
 
   return (

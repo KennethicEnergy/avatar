@@ -8,13 +8,19 @@
   padding: 20px;
   gap: 0.2rem;
   display: flex;
+  animation: fade 15s ease-in-out;
 
   .top {
     display: flex;
     justify-content: space-between;
 
-    svg {
+    p {
       cursor: pointer;
     }
   }
+}
+
+@keyframes fade {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
 }
