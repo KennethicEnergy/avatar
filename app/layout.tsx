@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import styles from "./page.module.scss";
-import Alert from "./components/alert/alert";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -21,7 +20,6 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  const isAlertTriggered = false;
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
@@ -30,7 +28,6 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             {children}
           </main>
         </div>
-        {isAlertTriggered && <Alert />}
       </body>
     </html>
   );

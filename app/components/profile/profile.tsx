@@ -5,9 +5,11 @@ import { BiLogoGithub } from "react-icons/bi";
 import { IoLogoLinkedin } from "react-icons/io";
 import { MdFileDownload } from 'react-icons/md';
 import { useRouter } from 'next/navigation';
+import { useAppStore } from '@/app/store/app-store';
 
 const Profile = () => {
   const router = useRouter();
+  const { setIsPageLoading } = useAppStore();
 
   const handleDownload = async () => {
     const url = `https://docs.google.com/document/d/${googleDocId}/export?format=pdf`;
@@ -20,13 +22,17 @@ const Profile = () => {
     document.body.removeChild(link);
   };
 
+  const navigateToAbout = () => {
+    router.push("/about");
+    setIsPageLoading(true);
+  };
+
   return (
     <div className={styles.profile}>
       <div className={styles.nameRow}>
-        <h1 className={styles.name} onClick={() => router.push("/about")}>
+        <h1 className={styles.name} onClick={navigateToAbout}>
           {fullName}
         </h1>
-
         <div className={styles.socials}>
           <span onClick={handleDownload}><MdFileDownload size={20}/></span>
           <span onClick={() => window.open(linkedinUrl, "_blank")}><IoLogoLinkedin size={30}/></span>

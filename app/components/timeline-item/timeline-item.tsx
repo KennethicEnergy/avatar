@@ -3,6 +3,7 @@ import styles from "./timeline-item.module.scss";
 import { CiImageOn } from "react-icons/ci";
 import { TimelineItemProps } from "@/app/constants/types";
 import { useRouter } from "next/navigation";
+import { useAppStore } from "@/app/store/app-store";
 
 const TimelineItem: React.FC<TimelineItemProps> = ({
   title,
@@ -16,9 +17,15 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
   const [isClamped, setIsClamped] = useState(false);
   const descriptionRef = useRef<HTMLParagraphElement>(null);
   const router = useRouter();
+  const { setIsPageLoading } = useAppStore();
 
   const toggleClamp = () => {
     setIsExpanded((prev) => !prev);
+  };
+
+  const navigateToProject = (url: string) => {
+    setIsPageLoading(true)
+    router.push(url);
   };
 
   useEffect(() => {
@@ -37,7 +44,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
       <div className={styles.content} >
         <h3 className={styles.title}>
           {title}
-          {projectUrl && <div className={styles.icon} onClick={() => router.push(projectUrl)}><CiImageOn size={20}/></div>}
+          {projectUrl && <div className={styles.icon} onClick={() => navigateToProject(projectUrl)}><CiImageOn size={20}/></div>}
         </h3>
         <h4 className={styles.company} onClick={() => companyUrl && window.open(companyUrl, "_blank")}>{company}</h4>
         <p className={styles.date}>{date}</p>

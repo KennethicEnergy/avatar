@@ -27,9 +27,11 @@ export interface ApplicationStore {
   currentModal: number | null;
   isModalOpen: boolean;
   isPageLoading: boolean;
+  isAlertOpen: boolean;
   setLang: (lang: string) => void;
   setModal: (view: number| null) => void;
   setIsModalOpen: (open: boolean) => void;
   setIsPageLoading: (loading: boolean) => void;
+  setIsAlertOpen: (open: boolean) => void;
   resetAppStore: () =>  void;
 }
