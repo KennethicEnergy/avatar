@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styles from './profile.module.scss';
 import { country, fullName, githubUrl, googleDocId, introduction, linkedinUrl } from "@/app/constants/constants";
 import { BiLogoGithub } from "react-icons/bi";
@@ -7,7 +7,6 @@ import { MdFileDownload } from 'react-icons/md';
 import { useRouter } from 'next/navigation';
 
 const Profile = () => {
-  const [onHover, setOnHover] = useState(false);
   const router = useRouter();
 
   const handleDownload = async () => {
@@ -23,14 +22,13 @@ const Profile = () => {
 
   return (
     <div className={styles.profile}>
-      <div className={styles.nameRow}
-        onMouseEnter={() => setOnHover(true)}
-        onMouseLeave={() => setOnHover(false)}>
-        <h1 className={styles.name}>
-          <span onClick={() => router.push("/about")}>{fullName}</span>
-          {onHover && <MdFileDownload size={20} onClick={handleDownload}/>}
+      <div className={styles.nameRow}>
+        <h1 className={styles.name} onClick={() => router.push("/about")}>
+          {fullName}
         </h1>
+
         <div className={styles.socials}>
+          <span onClick={handleDownload}><MdFileDownload size={20}/></span>
           <span onClick={() => window.open(linkedinUrl, "_blank")}><IoLogoLinkedin size={30}/></span>
           <span onClick={() => window.open(githubUrl, "_blank")}><BiLogoGithub size={30}/></span>
         </div>
