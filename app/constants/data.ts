@@ -7,7 +7,7 @@ export const timelineData: TimelineData[] = [
 		company: "98Labs Inc.",
 		companyUrl: "https://98labs.com",
 		date: "November 2016 - April 2017",
-		description: "I was assigned to do QA tasks. This is where my journey began and where I learned HTML and CSS and JavaScript!.",
+		description: "I was assigned to do QA tasks, which is where my journey began and where I first learned HTML, CSS, and JavaScript. As I tested various applications and features, I became more involved in understanding how the frontend and backend interact. I started writing simple scripts to automate repetitive tasks, which deepened my understanding of web development. Over time, I took on more responsibility, working alongside developers to identify bugs, verify bug fixes, and ensure that features were implemented according to specifications. This experience sparked my interest in coding, and I began to build a solid foundation in web development.",
     projectUrl: null,
     projectImages: null,
     projectGif: null,
@@ -21,7 +21,7 @@ export const timelineData: TimelineData[] = [
 		company: "98Labs Inc.",
 		companyUrl: "https://98labs.com",
 		date: "December 2018 - May 2021",
-		description: "This is where I started to learn how to build a websites with React and Angular.",
+		description: "This is where I started learning how to build websites using React and Angular. My journey began with grasping the fundamentals of JavaScript and diving into the core concepts of both frameworks, such as component-based architecture, state management, and routing. As I gained more experience, I explored more advanced topics like performance optimization, building reusable components, and integrating with APIs. I also focused on improving my debugging and testing skills while ensuring cross-browser compatibility and responsive design. This foundation laid the groundwork for my career, and I continue to refine my skills in modern frontend development.",
     projectUrl: null,
     projectImages: null,
     projectGif: null,
@@ -35,10 +35,7 @@ export const timelineData: TimelineData[] = [
 		company: "Tata Consultancy Services",
 		companyUrl: "https://www.tcs.com",
 		date: "May 2021 - July 2022",
-		description: [
-      "I worked as a maintainer of the project by reviewing other developer's code and then merging it to the main branch, up until to deploying to different environments using Jenkins tied up with Husky, SonarQube, and Fortify.",
-      "I was also assigned to join the Production Support Service Team and by checking and analyzing the problems raised by other Agents using New Relic, Devo and RabbitMQ",
-    ],
+		description: "I worked as a maintainer of the project, reviewing other developers' code, merging it into the main branch, and overseeing deployments to different environments using Jenkins, integrated with Husky, SonarQube, and Fortify for continuous integration and quality checks. In addition, I was assigned to the Production Support Service Team, where I analyzed and resolved issues raised by other agents using tools like New Relic, Devo, and RabbitMQ. I also contributed to coding UI and components, enhancing the user experience while troubleshooting and improving functionality. This role allowed me to bridge the gap between support tasks and frontend development, ensuring both system stability and a seamless user interface.",
     projectUrl: "projects/tcs",
     projectImages: [
       "/images/projects/manulife-id-1.png",
@@ -48,9 +45,8 @@ export const timelineData: TimelineData[] = [
     ],
     projectGif: "/images/project-gifs/manulife-id.gif",
     projectName: "Manulife ID",
-    projectDescription: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus blanditiis ipsum mollitia reprehenderit sint neque architecto ut ratione nulla tenetur quas,
-        cumque est vel impedit provident repellendus reiciendis praesentium culpa aperiam nemo! Ullam magni voluptate commodi aspernatur temporibus iure,
-        culpa dolore sint quas eaque debitis itaque facilis voluptas fugiat perspiciatis!`,
+    projectDescription: `ePOS (Electronic Point of Sale) system used by insurance advisors to provide faster, more efficient, and hassle-free customer support throughout the policy purchase process.
+Delivers proposals and guides customers through the application process without the need for face-to-face interaction.`,
     projectTechStack: [
       'Angular',
       'TypeScript',
@@ -73,9 +69,7 @@ export const timelineData: TimelineData[] = [
     ],
     projectGif: "/images/project-gifs/cebupacific.gif",
     projectName: "Cebu Pacific Air",
-    projectDescription: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus blanditiis ipsum mollitia reprehenderit sint neque architecto ut ratione nulla tenetur quas,
-        cumque est vel impedit provident repellendus reiciendis praesentium culpa aperiam nemo! Ullam magni voluptate commodi aspernatur temporibus iure,
-        culpa dolore sint quas eaque debitis itaque facilis voluptas fugiat perspiciatis!`,
+    projectDescription: `OmniX Web offers various functionalities to assist users in their air travel planning. Includes flight search feature, allowing users to input their preferred travel dates, as well as the origin and destination cities to discover the available flights. The app also enables users to select their seats, purchase additional services such as baggage allowance or in-flight meals, and conveniently make online payments.`,
     projectTechStack: [
       'Angular',
       'TypeScript',
