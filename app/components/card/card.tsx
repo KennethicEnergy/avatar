@@ -21,7 +21,7 @@ const Card = ({projectGif, projectTechStack}: TProps) => {
     <div className={styles.card} onClick={handleClick}>
       <Image src={projectGif} alt="project image" fill quality={100} priority />
       <div className={styles.madeWith}>
-        <span>Made with:</span>
+        {projectTechStack && projectTechStack.length > 0 &&<span>Made with:</span>}
         <div className={styles.technologies}>
           {projectTechStack?.map((tech, index) => <span key={index}>{rowIcons.find(icon => icon.key === tech)} {tech}</span>)}
         </div>

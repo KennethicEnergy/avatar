@@ -36,7 +36,7 @@ export const timelineData: TimelineData[] = [
 		companyUrl: "https://www.tcs.com",
 		date: "May 2021 - July 2022",
 		description: "I worked as a maintainer of the project, reviewing other developers' code, merging it into the main branch, and overseeing deployments to different environments using Jenkins, integrated with Husky, SonarQube, and Fortify for continuous integration and quality checks. In addition, I was assigned to the Production Support Service Team, where I analyzed and resolved issues raised by other agents using tools like New Relic, Devo, and RabbitMQ. I also contributed to coding UI and components, enhancing the user experience while troubleshooting and improving functionality. This role allowed me to bridge the gap between support tasks and frontend development, ensuring both system stability and a seamless user interface.",
-    projectUrl: "projects/tcs",
+    projectUrl: "pages/projects/tcs",
     projectImages: [
       "/images/projects/manulife-id-1.png",
       "/images/projects/manulife-id-2.png",
@@ -60,7 +60,7 @@ Delivers proposals and guides customers through the application process without 
 		companyUrl: "https://www.collaberadigital.com",
 		date: "July 2022 - July 2023",
 		description: "My day-to-day work involves converting all UI content into a CMS to enhance website optimization and creating fluid UI and UX based on designs provided in Figma. I document my assigned tasks along with the corresponding test attachments, review and approve tickets submitted by other frontend developers, and participate in scrum meetings and planning sessions. Collaboration is a key part of my role, as I work closely with teams from various departments to ensure projects are executed effectively.",
-    projectUrl: "projects/collabera",
+    projectUrl: "pages/projects/collabera",
     projectImages: [
       "/images/projects/cebupacific-1.png",
       "/images/projects/cebupacific-2.png",
@@ -85,7 +85,7 @@ Delivers proposals and guides customers through the application process without 
 
 		date: "September 2023 - September 2024",
 		description: "I work on maintaining large-scale projects with multiple variants, ensuring seamless multi-theme functionality within a single application. I quickly translate Figma designs into fully functional websites and apps, document my assigned tasks along with the necessary test attachments, and review and approve tickets submitted by other frontend developers. My routine also involves participating in scrum meetings and planning sessions, collaborating with teams across Southeast Asia to align on project goals and deliverables.",
-    projectUrl: "projects/w-bridges",
+    projectUrl: "pages/projects/w-bridges",
     projectImages: [
       "/images/projects/game99-1.png",
       "/images/projects/game99-2.png",

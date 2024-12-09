@@ -4,11 +4,11 @@ import { country, fullName, githubUrl, googleDocId, introduction, linkedinUrl } 
 import { BiLogoGithub } from "react-icons/bi";
 import { IoLogoLinkedin } from "react-icons/io";
 import { MdFileDownload } from 'react-icons/md';
-import { useRouter } from 'next/navigation';
+// import { useRouter } from 'next/navigation';
 import { useAppStore } from '@/app/store/app-store';
 
 const Profile = () => {
-  const router = useRouter();
+  // const router = useRouter();
   const { setIsPageLoading } = useAppStore();
 
   const handleDownload = async () => {
@@ -23,7 +23,7 @@ const Profile = () => {
   };
 
   const navigateToAbout = () => {
-    router.push("/about");
+    // router.push("pages/about");
     setIsPageLoading(true);
   };
 
