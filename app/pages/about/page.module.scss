@@ -1,0 +1,29 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  h1 {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .avatar {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #4a4a4a;
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 1;
+    cursor: pointer;
+    width: 100%;
+    max-width: 580px;
+    aspect-ratio: 16 / 9;
+
+    img {
+      object-fit: contain;
+    }
+  }
+}
