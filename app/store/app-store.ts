@@ -6,11 +6,9 @@ export const useAppStore = create<ApplicationStore>()(
   persist(
     (set) => ({
       lang: 'en',
-
       currentModal: null,
       isModalOpen: false,
       isPageLoading: false,
-
       isAlertOpen: false,
       isAlertDismissable: true,
       alertMessage: null,
