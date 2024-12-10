@@ -27,9 +27,9 @@ const Timeline: React.FC = () => {
           description={item.description}
         />
       ))}
-      <button className={styles.expandButton} onClick={handleExpand}>
+      {timelineData.length > 3 && <button className={styles.expandButton} onClick={handleExpand}>
         {isExpanded ? "Show Less" : "Show More"}
-      </button>
+      </button>}
     </div>
   );
 };
