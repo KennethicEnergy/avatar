@@ -17,7 +17,8 @@ const Settings = () => {
   };
 
   useEffect(() => {
-    if (theme === 'dark') {
+    setTheme(theme);
+    if (theme === 'light') {
       document.body.style.backgroundColor = '#ececec';
       document.body.style.color = '#171717';
     } else {
