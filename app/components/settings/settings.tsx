@@ -6,7 +6,7 @@ import { useAppStore } from '@/app/store/app-store';
 
 const Settings = () => {
   const [isCollapsed, setIsCollapsed] = useState(false);
-  const { theme, setTheme } = useAppStore();
+  const { theme, setTheme, setIsPageLoading } = useAppStore();
 
   const handleClick = () => {
     if (theme === 'light') {
@@ -17,7 +17,6 @@ const Settings = () => {
   };
 
   useEffect(() => {
-    setTheme(theme);
     if (theme === 'light') {
       document.body.style.backgroundColor = '#ececec';
       document.body.style.color = '#171717';
@@ -25,6 +24,7 @@ const Settings = () => {
       document.body.style.backgroundColor = '#171717';
       document.body.style.color = '#ececec';
     }
+    setIsPageLoading(false);
   }, [theme])
 
   return (

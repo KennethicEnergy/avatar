@@ -13,11 +13,7 @@ const firstRowIcons = rowIcons.slice(0, middleIndex);
 const secondRowIcons = rowIcons.slice(middleIndex);
 
 const Technologies: React.FC<TechnologiesProps> = ({ hasTitle }) => {
-    const { theme, setTheme } = useAppStore();
-
-    useEffect(() => {
-      setTheme(theme === null ? "dark" : theme);
-    }, [theme])
+  const { theme } = useAppStore();
 
   return (
     <div className={styles.technologies}>
