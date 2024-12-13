@@ -6,6 +6,7 @@ export const useAppStore = create<ApplicationStore>()(
   persist(
     (set) => ({
       lang: 'en',
+      theme: null,
       currentModal: null,
       isModalOpen: false,
       isPageLoading: false,
@@ -13,6 +14,7 @@ export const useAppStore = create<ApplicationStore>()(
       isAlertDismissable: true,
       alertMessage: null,
       alertType: null,
+      setTheme: (theme: string | null) => set({ theme }),
       setIsAlertOpen: (open: boolean) => set({ isAlertOpen: open }),
       setAlert(type: string | null, message: string | null, isDismissable: boolean = true) {
         set({ alertType: type, alertMessage: message, isAlertDismissable: isDismissable })
