@@ -9,6 +9,7 @@
   gap: 0.2rem;
   display: flex;
   animation: fade 15s ease-in-out;
+  z-index: 3;
 
   .top {
     display: flex;
