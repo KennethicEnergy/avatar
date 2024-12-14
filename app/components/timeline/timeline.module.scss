@@ -14,10 +14,21 @@
     background-color: #ddd;
   }
 
+  &[data-theme="light"] {
+    &::before {
+      background-color: #4a4a4a;
+    }
+  }
+
   .expandButton {
     background: none;
     border: none;
     width: fit-content;
-    color: #fff;
+    cursor: pointer;
+    color:#ececec;
+
+    &[data-theme="light"] {
+      color: #171717;
+    }
   }
 }

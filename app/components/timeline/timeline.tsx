@@ -2,8 +2,11 @@ import React, { useState } from "react";
 import TimelineItem from "../timeline-item/timeline-item";
 import styles from "./timeline.module.scss";
 import { timelineData } from "@/app/constants/data";
+import { useAppStore } from "@/app/store/app-store";
 
 const Timeline: React.FC = () => {
+  const { theme } = useAppStore();
+
   const [isExpanded, setIsExpanded] = useState(false);
 
   const sortedData = [...timelineData].sort((a, b) => b.id - a.id);
@@ -15,7 +18,7 @@ const Timeline: React.FC = () => {
   };
 
   return (
-    <div className={styles.timeline}>
+    <div className={styles.timeline} data-theme={theme}>
       {itemsToShow.map((item) => (
         <TimelineItem
           key={item.id}
@@ -27,7 +30,7 @@ const Timeline: React.FC = () => {
           description={item.description}
         />
       ))}
-      {timelineData.length > 3 && <button className={styles.expandButton} onClick={handleExpand}>
+      {timelineData.length > 3 && <button className={styles.expandButton} onClick={handleExpand} data-theme={theme}>
         {isExpanded ? "Show Less" : "Show More"}
       </button>}
     </div>

@@ -12,10 +12,17 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    border-bottom: 1px solid #171717;
+    border-bottom: 1px solid transparent;
 
-    &:hover {
-      border-bottom: 1px solid #ffffff;
+    &[data-theme="light"] {
+      &:hover {
+        border-bottom: 1px solid #171717;
+      }
+    }
+    &[data-theme="dark"] {
+      &:hover {
+        border-bottom: 1px solid #ffffff;
+      }
     }
   }
 }

@@ -37,7 +37,12 @@
   width: 100%;
 
   button {
-    color: #fff;
+    color:#ececec;
+    cursor: pointer;
+
+    &[data-theme="light"] {
+      color: #171717;
+    }
   }
 }
 

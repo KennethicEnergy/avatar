@@ -17,7 +17,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
   const [isClamped, setIsClamped] = useState(false);
   const descriptionRef = useRef<HTMLParagraphElement>(null);
   const router = useRouter();
-  const { setIsPageLoading } = useAppStore();
+  const { setIsPageLoading, theme } = useAppStore();
 
   const toggleClamp = () => {
     setIsExpanded((prev) => !prev);
@@ -56,7 +56,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
             ))}
           </ul>
         }
-        {isClamped && <button onClick={toggleClamp}>
+        {isClamped && <button onClick={toggleClamp} data-theme={theme}>
           {isExpanded ? "Read Less" : "Read More"}
         </button>}
       </div>

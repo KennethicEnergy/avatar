@@ -2,7 +2,6 @@ import Marquee from "react-fast-marquee";
 import styles from "./technologies.module.scss";
 import { rowIcons } from "@/app/constants/tech-icons";
 import { useAppStore } from "@/app/store/app-store";
-import { useEffect } from "react";
 
 interface TechnologiesProps {
   hasTitle: boolean;

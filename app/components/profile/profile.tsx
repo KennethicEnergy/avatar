@@ -9,7 +9,7 @@ import { useAppStore } from '@/app/store/app-store';
 
 const Profile = () => {
   const router = useRouter();
-  const { setIsPageLoading } = useAppStore();
+  const { setIsPageLoading, theme } = useAppStore();
 
   const handleDownload = async () => {
     const url = `https://docs.google.com/document/d/${googleDocId}/export?format=pdf`;
@@ -30,7 +30,7 @@ const Profile = () => {
   return (
     <div className={styles.profile}>
       <div className={styles.nameRow}>
-        <h1 className={styles.name} onClick={navigateToAbout}>
+        <h1 className={styles.name} onClick={navigateToAbout} data-theme={theme}>
           {fullName}
         </h1>
         <div className={styles.socials}>
