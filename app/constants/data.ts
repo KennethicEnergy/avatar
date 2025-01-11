@@ -82,7 +82,6 @@ Delivers proposals and guides customers through the application process without 
 		title: "Senior Front-End Web Developer",
 		company: "W-Bridges Manpower Corporation",
 		companyUrl: "https://wbridgesmanpower.com",
-
 		date: "September 2023 - September 2024",
 		description: "I work on maintaining large-scale projects with multiple variants, ensuring seamless multi-theme functionality within a single application. I quickly translate Figma designs into fully functional websites and apps, document my assigned tasks along with the necessary test attachments, and review and approve tickets submitted by other frontend developers. My routine also involves participating in scrum meetings and planning sessions, collaborating with teams across Southeast Asia to align on project goals and deliverables.",
     projectUrl: "pages/projects/w-bridges",
@@ -123,12 +122,11 @@ Delivers proposals and guides customers through the application process without 
     projectTechStack: null
 	},
   {
-		id: 5,
+		id: 7,
 		title: "Senior Front-End Web Developer",
 		company: "Vela Ventures Inc.",
 		companyUrl: "https://www.velaventures.net",
-
-		date: "September 2023 - September 2024",
+		date: "December 2024 - Present",
 		description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus blanditiis ipsum mollitia reprehenderit sint neque architecto ut ratione nulla tenetur quas,
         cumque est vel impedit provident repellendus reiciendis praesentium culpa aperiam nemo! Ullam magni voluptate commodi aspernatur temporibus iure,
         culpa dolore sint quas eaque debitis itaque facilis voluptas fugiat perspiciatis!`,
@@ -142,9 +140,11 @@ Delivers proposals and guides customers through the application process without 
     projectTechStack: [
       'NextJs',
       'React',
+      'JavaScript',
       'TypeScript',
       'SASS',
-      'Tailwind'
+      'Google Tag Manager',
+      'Google Analytics'
     ]
 	},
 ];
