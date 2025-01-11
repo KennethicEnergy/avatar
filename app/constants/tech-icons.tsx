@@ -20,7 +20,7 @@ import {
 import { DiRedis, DiMysql } from "react-icons/di";
 import { IoLogoIonic } from "react-icons/io";
 import { RiNextjsFill } from "react-icons/ri";
-import { SiFirebase } from "react-icons/si";
+import { SiFirebase, SiGoogleanalytics, SiGoogletagmanager } from "react-icons/si";
 
 export const rowIcons: ReactElement[] = [
 	<BiLogoGithub size={30} key="Github" />,
@@ -44,4 +44,6 @@ export const rowIcons: ReactElement[] = [
 	<DiRedis size={30} key="Redis" />,
 	<DiMysql size={30} key="MySql" />,
 	<SiFirebase size={25} key="Firebase" />,
+  <SiGoogletagmanager size={25} key="Google Tag Manager" />,
+  <SiGoogleanalytics size={25} key="Google Analytics"/>,
 ];
