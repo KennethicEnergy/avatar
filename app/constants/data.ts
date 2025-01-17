@@ -82,7 +82,6 @@ Delivers proposals and guides customers through the application process without 
 		title: "Senior Front-End Web Developer",
 		company: "W-Bridges Manpower Corporation",
 		companyUrl: "https://wbridgesmanpower.com",
-
 		date: "September 2023 - September 2024",
 		description: "I work on maintaining large-scale projects with multiple variants, ensuring seamless multi-theme functionality within a single application. I quickly translate Figma designs into fully functional websites and apps, document my assigned tasks along with the necessary test attachments, and review and approve tickets submitted by other frontend developers. My routine also involves participating in scrum meetings and planning sessions, collaborating with teams across Southeast Asia to align on project goals and deliverables.",
     projectUrl: "pages/projects/w-bridges",
@@ -113,7 +112,7 @@ Delivers proposals and guides customers through the application process without 
 		title: "Senior Front-End Web Developer",
 		company: "BossDeal Corporation",
     companyUrl: null,
-		date: "September 2024 - Present",
+		date: "September 2024 - December 2024",
 		description: "In my current role, I am responsible for developing betting game applications using Next.js and Vue.js. My tasks include designing and implementing key features, ensuring seamless integration of backend APIs, and optimizing performance for a smooth user experience. I work closely with designers to translate mockups into interactive interfaces, follow best practices for maintainable and scalable code, and implement unit tests to ensure code reliability. Additionally, I collaborate with stakeholders to gather requirements, troubleshoot issues, and deploy updates, ensuring the applications meet user expectations and project deadlines.",
     projectUrl: null,
     projectImages: null,
@@ -121,5 +120,31 @@ Delivers proposals and guides customers through the application process without 
     projectName: null,
     projectDescription: null,
     projectTechStack: null
+	},
+  {
+		id: 7,
+		title: "Senior Front-End Web Developer",
+		company: "Vela Ventures Inc.",
+		companyUrl: "https://www.velaventures.net",
+		date: "December 2024 - Present",
+		description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus blanditiis ipsum mollitia reprehenderit sint neque architecto ut ratione nulla tenetur quas,
+        cumque est vel impedit provident repellendus reiciendis praesentium culpa aperiam nemo! Ullam magni voluptate commodi aspernatur temporibus iure,
+        culpa dolore sint quas eaque debitis itaque facilis voluptas fugiat perspiciatis!`,
+    projectUrl: "",
+    projectImages: [],
+    projectGif: "",
+    projectName: "",
+    projectDescription: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus blanditiis ipsum mollitia reprehenderit sint neque architecto ut ratione nulla tenetur quas,
+        cumque est vel impedit provident repellendus reiciendis praesentium culpa aperiam nemo! Ullam magni voluptate commodi aspernatur temporibus iure,
+        culpa dolore sint quas eaque debitis itaque facilis voluptas fugiat perspiciatis!`,
+    projectTechStack: [
+      'NextJs',
+      'React',
+      'JavaScript',
+      'TypeScript',
+      'SASS',
+      'Google Tag Manager',
+      'Google Analytics'
+    ]
 	},
 ];

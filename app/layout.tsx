@@ -1,9 +1,10 @@
-import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
-import styles from "./page.module.scss";
+
 import Alert from "./components/alert/alert";
 import Loader from "./components/loader/loader";
+import type { Metadata } from "next";
+import localFont from "next/font/local";
+import styles from "./page.module.scss";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -25,13 +26,14 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <Alert />
         <Loader/>
-        <div className={styles.container}>
+        <Alert />
+        <div id="layout-container" className={styles.container}>
           <main className={styles.main}>
             {children}
           </main>
         </div>
+        
       </body>
     </html>
   );

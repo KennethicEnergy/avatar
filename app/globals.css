@@ -4,10 +4,25 @@ body {
   overflow-x: hidden;
 }
 
+/* Default Light Theme */
+:root {
+  --background-color: #ececec;
+  --text-color: #171717;
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+  --background-color: #171717;
+  --text-color: #ececec;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
   display: flex;
   flex-direction: column;
   justify-content: center;
