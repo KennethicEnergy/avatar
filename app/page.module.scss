@@ -2,13 +2,11 @@
   display: flex;
   width: 100%;
   justify-content: center;
-  padding: 4rem;
 
   .main {
     display: flex;
     flex-direction: column;
     width: 600px;
     min-width: 400px;
-    gap: 2rem;
   }
 }
