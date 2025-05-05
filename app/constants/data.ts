@@ -96,9 +96,7 @@ Delivers proposals and guides customers through the application process without 
     ],
     projectGif: "/images/project-gifs/game99.gif",
     projectName: "Game99",
-    projectDescription: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus blanditiis ipsum mollitia reprehenderit sint neque architecto ut ratione nulla tenetur quas,
-        cumque est vel impedit provident repellendus reiciendis praesentium culpa aperiam nemo! Ullam magni voluptate commodi aspernatur temporibus iure,
-        culpa dolore sint quas eaque debitis itaque facilis voluptas fugiat perspiciatis!`,
+    projectDescription: `Game99 is a multi platform appliacation made using NextJs and React JS. It is a platform where users can bet on different games and win real money.`,
     projectTechStack: [
       'NextJs',
       'React',
