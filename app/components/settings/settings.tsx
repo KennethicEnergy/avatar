@@ -32,11 +32,11 @@ const Settings = () => {
 
   return (
     <div className={styles.settings}>
-      {/* <CiSettings
+      <CiSettings
         size={30}
         onClick={() => setIsCollapsed(!isCollapsed)}
         className={isCollapsed ? styles.collapsed : styles.expanded}
-      /> */}
+      />
 
       {isCollapsed && <IoIosArrowDown/>}
 

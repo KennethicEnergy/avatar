@@ -32,7 +32,7 @@ const Profile = () => {
   return (
     <div className={styles.profile}>
       <div className={styles.nameRow}>
-        <h1 className={styles.name} onClick={navigateToAbout} data-theme={theme}>
+        <h1 className={styles.name} onClick={navigateToAbout}>
           {fullName}
         </h1>
         <div className={styles.socials}>
