@@ -11,7 +11,6 @@ const Loader = () => {
 
   useEffect(() => {
     const container = document.getElementById("layout-container");
-    console.log(container)
     if (container) {
       container.style.padding = isPageLoading ? "unset" : "";
     }
