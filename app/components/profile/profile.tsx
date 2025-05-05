@@ -9,7 +9,7 @@ import { useAppStore } from '@/app/store/app-store';
 
 const Profile = () => {
   const router = useRouter();
-  const { setIsPageLoading, theme } = useAppStore();
+  const { setIsPageLoading, theme, isPageLoading } = useAppStore();
 
   const handleDownload = async () => {
     const url = `https://docs.google.com/document/d/${googleDocId}/export?format=pdf`;
@@ -26,6 +26,8 @@ const Profile = () => {
     router.push("pages/about");
     setIsPageLoading(true);
   };
+
+  if (isPageLoading) return null;
 
   return (
     <div className={styles.profile}>

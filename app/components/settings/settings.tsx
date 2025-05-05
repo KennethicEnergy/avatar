@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import styles from './setttings.module.scss'
 import { CiLight, CiSettings, CiDark  } from 'react-icons/ci';
 import { IoIosArrowDown } from "react-icons/io";
@@ -6,7 +6,7 @@ import { useAppStore } from '@/app/store/app-store';
 
 const Settings = () => {
   const [isCollapsed, setIsCollapsed] = useState(false);
-  const { theme, setTheme, setIsPageLoading } = useAppStore();
+  const { theme, setTheme, isPageLoading, setIsPageLoading } = useAppStore();
 
   const handleClick = () => {
     if (theme === 'light') {
@@ -16,24 +16,27 @@ const Settings = () => {
     }
   };
 
+  const themeStyles = useMemo(() => {
+    return theme === 'light'
+      ? { backgroundColor: '#ececec', color: '#171717' }
+      : { backgroundColor: '#171717', color: '#ececec' };
+  }, [theme]);
+
   useEffect(() => {
-    if (theme === 'light') {
-      document.body.style.backgroundColor = '#ececec';
-      document.body.style.color = '#171717';
-    } else {
-      document.body.style.backgroundColor = '#171717';
-      document.body.style.color = '#ececec';
-    }
+    setIsPageLoading(true);
+    Object.assign(document.body.style, themeStyles);
     setIsPageLoading(false);
-  }, [theme])
+  }, [themeStyles]);
+
+  if (isPageLoading) return null;
 
   return (
     <div className={styles.settings}>
-      <CiSettings
+      {/* <CiSettings
         size={30}
         onClick={() => setIsCollapsed(!isCollapsed)}
         className={isCollapsed ? styles.collapsed : styles.expanded}
-      />
+      /> */}
 
       {isCollapsed && <IoIosArrowDown/>}
 

@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={`${geistSans.variable} ${geistMono.variable}`} inmaintabuse="1">
         <Loader/>
         <Alert />
         <div id="layout-container" className={styles.container}>
@@ -33,7 +33,6 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             {children}
           </main>
         </div>
-        
       </body>
     </html>
   );

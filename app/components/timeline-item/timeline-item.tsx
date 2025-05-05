@@ -17,7 +17,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
   const [isClamped, setIsClamped] = useState(false);
   const descriptionRef = useRef<HTMLParagraphElement>(null);
   const router = useRouter();
-  const { setIsPageLoading, theme } = useAppStore();
+  const { setIsPageLoading, isPageLoading, theme } = useAppStore();
 
   const toggleClamp = () => {
     setIsExpanded((prev) => !prev);
@@ -37,6 +37,8 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
       setIsClamped(actualHeight > maxHeight);
     }
   }, []);
+
+  if (isPageLoading) return null;
 
   return (
     <div className={styles.timelineItem}>
